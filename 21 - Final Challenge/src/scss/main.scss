@@ -47,7 +47,7 @@ ul{
 header {
   background: $dark;
   width: 100%;
-  padding: 1em 0;
+  padding: 0.25rem 0;
   text-align: center;
 }
 
@@ -166,8 +166,15 @@ header {
   }
 }
 
-
+.features{
+  padding: 2rem;
+  &--col{
+    text-align: center;
+    padding: 2rem;
+  }
+}
 .approach{
+  padding: 2rem 0;
   .col{
     align-items: flex-start;
   }
@@ -207,7 +214,7 @@ header {
       display: none;
   }
   .col{
-    width:100%;
+    width:70%;
   }
   .intro{
     .row{
@@ -241,4 +248,14 @@ header {
       align-items: flex-start;
 
   }
+  .approach{
+    padding: 2rem 0;
+    &__col1{
+      width: 60%;
+    }
+    &__col2{
+      width:30%;
+    }
+  }
+
 }
