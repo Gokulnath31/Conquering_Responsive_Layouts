@@ -1,0 +1,238 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  padding: 0;
+  list-style-position: outside;
+  list-style: none;
+}
+ul li {
+  padding: 0.5rem;
+}
+
+.btn {
+  font-family: "Oswald", sans-serif;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 900;
+  background-color: #A59678;
+  padding: 0.75em 2em;
+  border-radius: 100px;
+}
+
+.container {
+  width: 85%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+header {
+  background: #2E323F;
+  width: 100%;
+  padding: 1em 0;
+  text-align: center;
+}
+
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #2E323F;
+  color: white;
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 0;
+}
+
+.nav-toggle:focus,
+.nav-toggle:hover {
+  opacity: 0.75;
+}
+
+.hamburger {
+  width: 50%;
+  position: relative;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  width: 100%;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+/* made changes here from video
+ to make it more accessible.
+
+ Works the same :) */
+.nav {
+  visibility: hidden;
+  height: 0;
+  color: white;
+  font-family: "Oswald", sans-serif;
+  position: absolute;
+}
+
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav__item {
+  margin-top: 0.75em;
+}
+
+.nav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+
+.nav__link:hover, .nav__link:focus {
+  opacity: 0.75;
+}
+
+.logo {
+  height: 30px;
+}
+
+.section-title {
+  color: #A59678;
+  font-family: "Oswald", sans-serif;
+}
+
+.section-content {
+  font-family: "Montserrat", sans-serif;
+}
+
+.intro {
+  background-color: #3B4050;
+}
+.intro h1 {
+  font-family: "Oswald", sans-serif;
+  font-size: 4rem;
+  color: white;
+  line-height: 1.1;
+}
+.intro h1 span {
+  color: #A59678;
+}
+.intro p {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+
+.approach .col {
+  align-items: flex-start;
+}
+.approach .col--approach {
+  text-align: center;
+  background-color: #3B4050;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  color: white;
+}
+.approach .section-title--approach {
+  color: white;
+}
+
+.about {
+  background-color: #3B4050;
+  color: #6F737F;
+}
+.about--title {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 4rem;
+}
+.about__col--title {
+  font-family: "Oswald", sans-serif;
+  font-size: 1.2rem;
+  color: #A59678;
+}
+.about li {
+  font-family: "Montserrat", sans-serif;
+}
+
+@media (min-width: 700px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .col {
+    width: 100%;
+  }
+
+  .intro .row {
+    align-items: center;
+  }
+
+  .col + .col {
+    margin-left: 0.5rem;
+  }
+
+  .nav {
+    visibility: visible;
+    display: flex;
+    align-items: center;
+    height: auto;
+    position: relative;
+    justify-content: flex-end;
+  }
+
+  .nav__list {
+    display: flex;
+    margin: 0;
+  }
+
+  .nav__item {
+    margin: 0 0 0 1.5em;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+/*# sourceMappingURL=/main.77bb5cfd.css.map */
